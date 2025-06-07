@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* PART 1 */
 body {
     margin: 0;
@@ -38,6 +42,7 @@ header {
     width: 40px;
     height: 40px;
     margin-right: 20px;
+    border-radius: 50%;
 }
 
 .head-left button {
@@ -63,6 +68,28 @@ header {
     color: white;
     font-size: 15px;
 }
+
+.head-right p {
+    margin: 0 15px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.head-right p a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.head-right p a:hover,
+.head-right p a.active {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+
 
 /* PART 2 */
 /* Fit video on any screen */
@@ -105,7 +132,8 @@ header {
 
 .hero-info p {
     color: white;
-    max-width: 210px;
+    max-width: 300px;
+    letter-spacing: 2px;
 }
 
 .hero-info button {
@@ -124,22 +152,50 @@ header {
     box-shadow: 0 0 15px #edff66;
 }
 
+#copy-notification {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0;
+  max-width: 300px;
+  text-align: center;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  user-select: none;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Show notification */
+#copy-notification.show {
+  opacity: 1;
+  height: auto;
+  pointer-events: auto;
+}
+
+
+
 #timer {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     right: 20px;
-    bottom: 90px;
+    bottom: 70px;
+    letter-spacing: 5px;
 }
 
 #timer-message {
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     position: absolute;
     right: 20px;
     bottom: 30px;
+    letter-spacing: 0px;
 }
 
 /* PART 3 - NEXT BUTTON CENTER */
@@ -170,6 +226,124 @@ header {
     opacity: .9;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.616);
 }
+
+/* NEW BUTTON CENTER */
+/* From Uiverse.io by kheshore */
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    --color-text: #9ee5fa;
+    --color-background: #353535;
+    --color-outline: #9ee5fa80;
+    --color-shadow: #00000080;
+}
+
+.btn-conteiner {
+    position: absolute;
+    left: 95%;
+    bottom: 45%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    padding: 0px 3px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover,
+.btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+}
+
+.icon-arrow {
+    width: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: 6%;
+}
+
+/* SVG */
+#arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: var(--color-background);
+    }
+
+    100% {
+        fill: #9ee5fa;
+    }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+@keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
 
 /* ABOUT SECTION CONTAINER */
 
@@ -381,7 +555,7 @@ header {
     bottom: 5%;
     height: 250px;
     width: 350px;
-    clip-path: polygon(52% 5%, 100% 38%, 82% 100%, 34% 93%, 0% 38%);
+    clip-path: polygon(52% 5%, 100% 38%, 82% 100%, 34% 93%, 0% 20%);
 }
 
 .img-wrapper {
