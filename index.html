@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -36,12 +39,15 @@
                 </video>
 
                 <div class="hero-info">
-                    <h1>REDEFINE</h1>
+                    <h1>OFW ELITES</h1>
                     <P>Enter message</P>
                     <button>WATCH TRAILER</button>
                 </div>
-
-                <h1 class="gaming-text">Gaming</h1>
+                
+                <div id="season-timer">
+                    <h1 id="timer">Season Ends:</h1>
+                    <h2 id="timer-message"></h2>
+                </div>
                 <div class="next-btn">
                     NEXT
                 </div>
@@ -59,34 +65,38 @@
                 <img src="img/about.webp" alt="about-img">
             </div>
             <h4>Game of Games begins your life, now an epic MMORPG</h4>
-            <h5>Zentry unites every player from countless games and platform, both digital and physical, into a unified Play Economy</h5>
+            <h5>Zentry unites every player from countless games and platform, both digital and physical, into a unified
+                Play Economy</h5>
         </section>
 
         <section class="info-section">
             <h3>Into the Metagame Layer</h3>
-            <p>A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure.</p>
-            
+            <p>A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding
+                adventure.</p>
+
             <div class="info-cards">
                 <div class="card autoDisplay">
                     <h1>RADIANT</h1>
                     <p>An anime and gaming inspired NFT collection - the IP primed for expansion.</p>
-                    
+
                     <video src="videos/feature-1.mp4" autoplay loop muted plays-inline></video>
                     <button>COMING SOON</button>
                 </div>
 
                 <div class="card autoDisplay">
                     <h1>ZIGMA</h1>
-                    <p>A cross-platform metagame app, turning your activities acroos Web2 and Web3 games into a rewarding adventure.</p>
-                    
+                    <p>A cross-platform metagame app, turning your activities acroos Web2 and Web3 games into a
+                        rewarding adventure.</p>
+
                     <video src="videos/feature-2.mp4" autoplay loop muted plays-inline></video>
                     <button>COMING SOON</button>
                 </div>
 
                 <div class="card autoDisplay">
                     <h1>NEXUS</h1>
-                    <p>A gamified social hub, adding a new dimension of play to social interaction for Web3 communities.</p>
-                    
+                    <p>A gamified social hub, adding a new dimension of play to social interaction for Web3 communities.
+                    </p>
+
                     <video src="videos/feature-3.mp4" autoplay loop muted plays-inline></video>
                     <button>COMING SOON</button>
                 </div>
@@ -94,7 +104,7 @@
                 <div class="card autoDisplay">
                     <h1>AZUL</h1>
                     <p>A cross world AI Agent - elevating your gameplay to be more fun and productive.</p>
-                    
+
                     <video src="videos/feature-4.mp4" autoplay loop muted plays-inline></video>
                     <button>COMING SOON</button>
                 </div>
@@ -131,15 +141,17 @@
         <section class="footer">
             <p>@Nova 2025. All rights reserved</p>
             <ul>
-                <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-                <li><a href="#"><i class='bx bxl-github' ></i></a></li>
-                <li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
             </ul>
             <p>Privacy Policy</p>
         </section>
     </div>
 
     <script src="app.js"></script>
+    <script src="timer.js"></script>
 </body>
+
 </html>
