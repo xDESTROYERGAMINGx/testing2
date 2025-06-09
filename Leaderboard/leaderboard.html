@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=350, initial-scale=1" />
+  <title>Leaderboard Gem Fix</title>
+  <!-- Montserrat font for leaderboard -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="back-button" onclick="history.back()">← Back</button>
+  <div class="leaderboard-container">
+    <div class="leaderboard-title">LEADERBOARD</div>
+    <h5 class="leaderboard-sub">UPDATED ON 5/30/25 : 4:51PM</h5>
+    <div class="podium" id="podium"></div>
+    <div class="leaderboard-list" id="leaderboard-list"></div>
+  </div>
+
+  <!-- Green Gem SVG Symbol -->
+  <svg style="display:none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="gem" viewBox="0 0 64 64">
+      <polygon fill="#43ea2a" stroke="#2ca62c" stroke-width="2" points="32 2 12 24 12 40 32 62 52 40 52 24" />
+      <polygon fill="#a2ff8a" points="32 2 32 62 52 40 12 40" />
+      <ellipse cx="32" cy="32" rx="10" ry="18" fill="#43ea2a" opacity="0.2" />
+      <ellipse cx="32" cy="24" rx="6" ry="8" fill="#fff" opacity="0.2" />
+    </symbol>
+  </svg>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(270deg, #4acfee, #2a46ff, #0099ff, #4acfee);
+    background-size: 600% 600%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(74, 207, 238, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    user-select: none;
+    outline-offset: 4px;
+    animation: gradientShift 8s ease infinite;
+}
+
+#back-button:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px rgba(74, 207, 238, 0.9),
+        0 0 40px rgba(42, 70, 255, 0.7);
+}
+
+#back-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 8px rgba(74, 207, 238, 0.5);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.leaderboard-container {
+    background: rgba(30, 0, 60, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 32px 24px 24px 24px;
+    width: 350px;
+    max-width: 95vw;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.leaderboard-title {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #4acfee, #53f8c9, #02d79a, #6070fd, #2a46ff, #0099ff, #4acfee);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.leaderboard-sub {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    gap: 18px;
+}
+
+.podium-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: fadeInUp 0.8s;
+}
+
+.podium-place .rank-label {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+    user-select: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.podium-place .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+    position: relative;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.18);
+    transition: box-shadow 0.4s;
+    overflow: hidden;
+}
+
+.podium-place.first .avatar {
+    border: 3px solid #ffd700;
+    box-shadow:
+        0 0 8px 3px #ffd700,
+        0 0 20px 6px #ffd70099,
+        0 0 30px 10px #ffd70066;
+    transition: box-shadow 0.4s, border-color 0.4s;
+    margin-bottom: 12px;
+}
+
+/* Gem is now a sibling of .avatar, not a child! */
+.podium-place.first .gem {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 36px;
+    animation: gemBounce 1s infinite alternate;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes gemBounce {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-6px);
+    }
+}
+
+.podium-place .player-name {
+    font-size: 0.93rem;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.podium-place .score {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, #ffd700 30%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.podium-place.second .avatar {
+    opacity: 0.8;
+}
+
+.podium-place.third .avatar {
+    opacity: 0.7;
+}
+
+.leaderboard-list {
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.leaderboard-list::-webkit-scrollbar {
+    display: none;
+}
+
+.leaderboard-row {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #fff2 0%, #fff1 100%);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 10px 16px;
+    gap: 12px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.7s forwards;
+    animation-delay: var(--delay, 0s);
+    position: relative;
+    transition: background 0.3s, transform 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rank {
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 28px;
+    text-align: center;
+    color: #ffd700;
+}
+
+.row-name {
+    font-weight: 600;
+    flex: 1;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.row-score {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffd700;
+    min-width: 60px;
+    text-align: right;
+    transition: color 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

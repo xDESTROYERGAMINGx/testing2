@@ -493,7 +493,7 @@ header {
     left: 5%;
     z-index: 1;
     max-width: 250px;
-    color: lightgray;
+    color: rgb(255, 255, 255);
 }
 
 .card video {
@@ -569,9 +569,9 @@ header {
     position: absolute;
     left: 5%;
     bottom: 5%;
-    height: 250px;
+    height: 225px;
     width: 350px;
-    clip-path: polygon(52% 5%, 100% 38%, 82% 100%, 34% 93%, 0% 20%);
+    clip-path: polygon(50% 0%, 86% 38%, 70% 100%, 33% 100%, 13% 38%);
 }
 
 .img-wrapper {
