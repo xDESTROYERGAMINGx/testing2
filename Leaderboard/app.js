@@ -1,14 +1,37 @@
-let players = [
-  { name: "PATRICK XD JDS", score: 10456, avatar: "" },
-  { name: "PLAYER", score: 10205, avatar: "" },
-  { name: "PLAYER", score: 8589, avatar: "" },
-  { name: "PLAYER", score: 7455, avatar: "" },
-  { name: "PLAYER", score: 7455, avatar: "" },
-  { name: "PLAYER", score: 7455, avatar: "" },
-  { name: "PLAYER", score: 5670, avatar: "" },
-  { name: "PLAYER", score: 5670, avatar: "" },
-  { name: "PLAYER", score: 5670, avatar: "" },
-  { name: "PLAYER", score: 4980, avatar: "" }
+// Data for both leaderboards
+const leaderboardData = [
+  {
+    title: "OFW ELITES DONATION LEADERBOARD",
+    sub: "NO DATA",
+    players: [
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" },
+      { name: "NO DATA", score: 0, avatar: "" }
+    ]
+  },
+  {
+    title: "OFW ELITES 2 DONATION LEADERBOARD",
+    sub: "UPDATED ON 6/14/25 : 12:48AM",
+    players: [
+      { name: "ZANE", score: 27157, avatar: "" },
+      { name: "PATRICK", score: 8658, avatar: "" },
+      { name: "ANDREW", score: 6358, avatar: "" },
+      { name: "KEV PU AKAL", score: 2511, avatar: "" },
+      { name: "PAWIII", score: 2063, avatar: "" },
+      { name: "K L H A Y", score: 1541, avatar: "" },
+      { name: "POT2X", score: 1402, avatar: "" },
+      { name: "JESSIE", score: 1367, avatar: "" },
+      { name: "OE MELIODAS", score: 1159, avatar: "" },
+      { name: "EVIL WITCH", score: 1038, avatar: "" }
+    ]
+  }
 ];
 
 function avatarSVG(size = 70) {
@@ -58,10 +81,30 @@ function renderList(players) {
   });
 }
 
-function updateLeaderboard(data) {
-  data.sort((a, b) => b.score - a.score);
-  renderPodium(data.slice(0, 3));
-  renderList(data);
+function updateLeaderboard(idx) {
+  const data = leaderboardData[idx];
+  // Sort players by score descending
+  data.players.sort((a, b) => b.score - a.score);
+  document.getElementById('lb-title').textContent = data.title;
+  document.getElementById('lb-sub').textContent = data.sub;
+  renderPodium(data.players.slice(0, 3));
+  renderList(data.players);
 }
 
-updateLeaderboard(players);
+// Button switching logic
+document.addEventListener("DOMContentLoaded", function() {
+  const btn1 = document.getElementById('btn-1');
+  const btn2 = document.getElementById('btn-2');
+  btn1.addEventListener('click', function() {
+    btn1.classList.add('active');
+    btn2.classList.remove('active');
+    updateLeaderboard(0);
+  });
+  btn2.addEventListener('click', function() {
+    btn2.classList.add('active');
+    btn1.classList.remove('active');
+    updateLeaderboard(1);
+  });
+  // Show first leaderboard by default
+  updateLeaderboard(0);
+});

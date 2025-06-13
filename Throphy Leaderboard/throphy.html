@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clash of Clans Trophy Leaderboard with Full List</title>
+    <link rel="stylesheet" href="throphy-css.css">
+</head>
+<body>
+    <button id="back-button" onclick="history.back()">← Back</button>
+    <div class="leaderboard-container">
+        <div style="margin-bottom: 16px;">
+            <button id="btn-1" class="switch-btn active">OFW ELITES</button>
+            <button id="btn-2" class="switch-btn">OFW ELITES 2</button>
+        </div>
+        <div class="leaderboard-title" id="lb-title">LEADERBOARD</div>
+        <h5 class="leaderboard-sub" id="lb-sub">UPDATED ON 5/30/25 : 4:51PM</h5>
+        <div class="podium-wrapper" id="podium"></div>
+        <div class="leaderboard-list" id="leaderboard-list" aria-label="Leaderboard positions 4 and beyond"></div>
+    </div>
+    <!-- Trophy SVG symbol -->
+    <svg style="display:none;">
+        <symbol id="trophy" viewBox="0 0 24 24">
+            <g>
+                <ellipse cx="12" cy="22" rx="6" ry="2" fill="#d4af37" />
+                <rect x="9" y="17" width="6" height="4" rx="1.5" fill="#d4af37" />
+                <rect x="7" y="15" width="10" height="3" rx="1.5" fill="#d4af37" />
+                <path d="M5 4a7 7 0 0 0 14 0v-2a1 1 0 0 0-1-1h-12a1 1 0 0 0-1 1v2z" fill="#ffd700" stroke="#b8860b"
+                    stroke-width="1" />
+                <path d="M2 6c0 3 2 5 5 5V9c-2 0-3-2-3-3V6h-2zM22 6c0 3-2 5-5 5V9c2 0 3-2 3-3V6h2z" fill="#b8860b" />
+            </g>
+        </symbol>
+    </svg>
+    <script src="throphy-js.js"></script>
+</body>
+</html>

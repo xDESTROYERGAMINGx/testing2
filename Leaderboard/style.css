@@ -267,6 +267,27 @@ body {
     transition: color 0.5s;
 }
 
+.switch-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 18px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 10px;
+    background: #4acfee;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(74,207,238,0.25);
+    outline: none;
+}
+.switch-btn.active, .switch-btn:hover {
+    background: #2a46ff;
+    color: #fff;
+}
+
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
