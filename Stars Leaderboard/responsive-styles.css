@@ -1,0 +1,188 @@
+/* responsive-style.css */
+
+/* Apply only on screens smaller than 1024px */
+@media (max-width: 1023px) {
+    body {
+        padding: 16px 12px 40px;
+        font-size: 15px;
+    }
+
+    .leaderboard-container {
+        width: 100%;
+        max-width: 420px;
+        padding: 28px 20px 24px;
+        border-radius: 18px;
+    }
+
+    .leaderboard-title {
+        font-size: 1.6rem !important;
+        letter-spacing: 1.4px !important;
+    }
+
+    .leaderboard-sub {
+        font-size: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .podium {
+        flex-wrap: wrap !important;
+        gap: 14px !important;
+        margin-bottom: 28px !important;
+        justify-content: center !important;
+    }
+
+    .podium-place {
+        width: 100px !important;
+        padding: 14px 10px 20px !important;
+    }
+
+    .podium-place.first {
+        box-shadow: 0 0 25px #ffd700cc !important;
+    }
+
+    .podium-rank {
+        font-size: 1.6rem !important;
+    }
+
+    .podium-name {
+        font-size: 1rem !important;
+    }
+
+    .stars {
+        font-size: 1rem !important;
+    }
+
+    .percentage-bar {
+        height: 10px !important;
+    }
+
+    .percentage-text {
+        font-size: 0.85rem !important;
+    }
+
+    .leaderboard-list {
+        max-height: 260px !important;
+    }
+
+    .leaderboard-row {
+        padding: 10px 14px !important;
+        gap: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .rank {
+        font-size: 1.1rem !important;
+        width: 24px !important;
+    }
+
+    .row-name {
+        font-size: 0.95rem !important;
+    }
+
+    .row-stars {
+        font-size: 0.95rem !important;
+        min-width: 80px !important;
+    }
+
+    .row-percentage {
+        font-size: 0.85rem !important;
+        min-width: 45px !important;
+    }
+
+    #back-button {
+        top: 16px !important;
+        left: 16px !important;
+        padding: 10px 20px !important;
+        font-size: 1.05rem !important;
+        border-radius: 10px !important;
+    }
+
+    .switch-btn {
+        font-size: 0.95rem !important;
+        margin: 0 10px !important;
+        margin-bottom: 20px !important;
+        padding: 8px 14px !important;
+        border-radius: 8px !important;
+        margin: 0 4px !important;
+    }
+}
+
+/* Smaller phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .leaderboard-container {
+        max-width: 95vw !important;
+        padding: 20px 12px 20px !important;
+    }
+
+    .leaderboard-title {
+        font-size: 1.3rem !important;
+        letter-spacing: 1.1px !important;
+    }
+
+    .podium-place {
+        width: 85px !important;
+        padding: 12px 8px 18px !important;
+    }
+
+    .podium-rank {
+        font-size: 1.3rem !important;
+    }
+
+    .podium-name {
+        font-size: 0.9rem !important;
+    }
+
+    .stars {
+        font-size: 0.9rem !important;
+    }
+
+    .percentage-bar {
+        height: 8px !important;
+    }
+
+    .percentage-text {
+        font-size: 0.8rem !important;
+    }
+
+    .leaderboard-row {
+        padding: 8px 10px !important;
+        gap: 8px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .rank {
+        font-size: 1rem !important;
+        width: 20px !important;
+    }
+
+    .row-name {
+        font-size: 0.85rem !important;
+    }
+
+    .row-stars {
+        font-size: 0.85rem !important;
+        min-width: 70px !important;
+    }
+
+    .row-percentage {
+        font-size: 0.75rem !important;
+        min-width: 40px !important;
+    }
+
+    #back-button {
+        top: 10px !important;
+        left: 10px !important;
+        padding: 8px 16px !important;
+        font-size: 0.95rem !important;
+        border-radius: 8px !important;
+    }
+
+    .switch-btn {
+        font-size: 0.85rem !important;
+        margin: 0 10px !important;
+        margin-bottom: 20px !important;
+        padding: 6px 12px !important;
+        border-radius: 6px !important;
+        margin: 0 3px !important;
+    }
+}
