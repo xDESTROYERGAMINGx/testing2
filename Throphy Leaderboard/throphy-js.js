@@ -4,32 +4,32 @@ const leaderboards = [
         title: "OFW ELITES LEADERBOARD",
         sub: "UPDATED ON 5/30/25 : 4:51PM",
         players: [
-            { name: "ALICE", trophies: 5890, avatar: "" },
-            { name: "BOB", trophies: 5890, avatar: "" },
-            { name: "CHARLIE", trophies: 5700, avatar: "" },
-            { name: "DAVID", trophies: 5400, avatar: "" },
-            { name: "ELLA", trophies: 5200, avatar: "" },
-            { name: "FRANK", trophies: 5200, avatar: "" },
-            { name: "GRACE", trophies: 5100, avatar: "" },
-            { name: "HELEN", trophies: 5000, avatar: "" },
-            { name: "IVAN", trophies: 4950, avatar: "" },
-            { name: "JULIA", trophies: 4900, avatar: "" }
+            { name: "ALICE", trophies: 5890, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "BOB", trophies: 5890, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "CHARLIE", trophies: 5700, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "DAVID", trophies: 5400, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "ELLA", trophies: 5200, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "FRANK", trophies: 5200, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "GRACE", trophies: 5100, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "HELEN", trophies: 5000, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "IVAN", trophies: 4950, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "JULIA", trophies: 4900, avatar: "../assets/CHAR/hogrider.webp" }
         ]
     },
     {
         title: "OFW ELITES 2 LEADERBOARD",
         sub: "UPDATED ON 6/1/25 : 10:00AM",
         players: [
-            { name: "ZEUS", trophies: 6000, avatar: "" },
-            { name: "HERA", trophies: 5990, avatar: "" },
-            { name: "POSEIDON", trophies: 5900, avatar: "" },
-            { name: "ARES", trophies: 5800, avatar: "" },
-            { name: "ATHENA", trophies: 5700, avatar: "" },
-            { name: "APOLLO", trophies: 5600, avatar: "" },
-            { name: "ARTEMIS", trophies: 5500, avatar: "" },
-            { name: "HEPHAESTUS", trophies: 5400, avatar: "" },
-            { name: "HERMES", trophies: 5300, avatar: "" },
-            { name: "DEMETER", trophies: 5200, avatar: "" }
+            { name: "ZEUS", trophies: 6000, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "HERA", trophies: 5990, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "POSEIDON", trophies: 5900, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "ARES", trophies: 5800, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "ATHENA", trophies: 5700, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "APOLLO", trophies: 5600, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "ARTEMIS", trophies: 5500, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "HEPHAESTUS", trophies: 5400, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "HERMES", trophies: 5300, avatar: "../assets/CHAR/hogrider.webp" },
+            { name: "DEMETER", trophies: 5200, avatar: "../assets/CHAR/hogrider.webp" }
         ]
     }
 ];

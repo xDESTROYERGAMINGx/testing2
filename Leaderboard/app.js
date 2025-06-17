@@ -20,16 +20,16 @@ const leaderboardData = [
     title: "OFW ELITES 2 DONATION LEADERBOARD",
     sub: "UPDATED ON 6/14/25 : 12:48AM",
     players: [
-      { name: "ZANE", score: 27157, avatar: "" },
-      { name: "PATRICK", score: 8658, avatar: "" },
-      { name: "ANDREW", score: 6358, avatar: "" },
-      { name: "KEV PU AKAL", score: 2511, avatar: "" },
-      { name: "PAWIII", score: 2063, avatar: "" },
+      { name: "ZANE", score: 27157, avatar: "../assets/CHAR/healer.webp" },
+      { name: "PATRICK", score: 8658, avatar: "../assets/CHAR/hogrider.webp" },
+      { name: "ANDREW", score: 6358, avatar: "../assets/CHAR/minion.webp" },
+      { name: "KEV PU AKAL", score: 2511, avatar: "../assets/CHAR/barbarian1.png" },
+      { name: "PAWIII", score: 2063, avatar: "../assets/CHAR/balloon.png" },
       { name: "K L H A Y", score: 1541, avatar: "" },
-      { name: "POT2X", score: 1402, avatar: "" },
-      { name: "JESSIE", score: 1367, avatar: "" },
-      { name: "OE MELIODAS", score: 1159, avatar: "" },
-      { name: "EVIL WITCH", score: 1038, avatar: "" }
+      { name: "POT2X", score: 1402, avatar: "../assets/CHAR/barbarian2.webp" },
+      { name: "JESSIE", score: 1367, avatar: "../assets/CHAR/hogrider.webp" },
+      { name: "OE MELIODAS", score: 1159, avatar: "../assets/CHAR/hogrider.webp" },
+      { name: "EVIL WITCH", score: 1038, avatar: "../assets/CHAR/archer3.webp" }
     ]
   }
 ];

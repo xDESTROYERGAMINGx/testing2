@@ -1,0 +1,211 @@
+/* responsive-style.css */
+
+/* MOBILE FIRST: Styles for small devices (phones, small tablets) */
+@media (max-width: 767px) {
+  body {
+    padding: 12px 8px 40px;
+    font-size: 14px;
+  }
+
+  .leaderboard-container {
+    width: 100%;
+    max-width: 360px;
+    padding: 24px 16px 20px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    overflow: visible;
+    text-align: center;
+  }
+
+  .leaderboard-title {
+    font-size: 1.5rem !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .leaderboard-sub {
+    font-size: 9px !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 1.3px !important;
+  }
+
+  .podium {
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    margin-bottom: 24px !important;
+    justify-content: center !important;
+  }
+
+  .podium-place {
+    width: 90px !important;
+  }
+
+  .podium-place .avatar {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .podium-place.first .avatar {
+    width: 60px !important;
+    height: 60px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .podium-place .rank-label {
+    font-size: 1rem !important;
+  }
+
+  .podium-place .player-name {
+    font-size: 0.85rem !important;
+    height: 1.1em !important;
+  }
+
+  .podium-place .score {
+    font-size: 1rem !important;
+  }
+
+  .podium-place.first .gem {
+    width: 28px !important;
+    height: 28px !important;
+    top: -24px !important;
+  }
+
+  .leaderboard-list {
+    max-height: 220px !important;
+  }
+
+  .leaderboard-row {
+    padding: 8px 12px !important;
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .rank {
+    font-size: 1rem !important;
+    width: 22px !important;
+  }
+
+  .row-name {
+    font-size: 0.9rem !important;
+  }
+
+  .row-score {
+    font-size: 1rem !important;
+    min-width: 50px !important;
+  }
+
+  #back-button {
+    top: 10px !important;
+    left: 10px !important;
+    padding: 8px 16px !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+  }
+
+  .switch-btn {
+    font-size: 0.9rem !important;
+    padding: 8px 14px !important;
+    border-radius: 8px !important;
+    margin: 0 3px !important;
+  }
+}
+
+/* TABLETS AND SMALLER LAPTOPS (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .leaderboard-container {
+    max-width: 480px !important;
+    padding: 36px 28px 28px !important;
+    border-radius: 20px !important;
+  }
+
+  .leaderboard-title {
+    font-size: 2rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .leaderboard-sub {
+    font-size: 11px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .podium {
+    gap: 24px !important;
+    margin-bottom: 36px !important;
+  }
+
+  .podium-place {
+    width: 130px !important;
+  }
+
+  .podium-place .avatar {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .podium-place.first .avatar {
+    width: 84px !important;
+    height: 84px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .podium-place .rank-label {
+    font-size: 1.3rem !important;
+  }
+
+  .podium-place .player-name {
+    font-size: 1.05rem !important;
+  }
+
+  .podium-place .score {
+    font-size: 1.25rem !important;
+  }
+
+  .podium-place.first .gem {
+    width: 36px !important;
+    height: 36px !important;
+    top: -32px !important;
+  }
+
+  .leaderboard-list {
+    max-height: 320px !important;
+  }
+
+  .leaderboard-row {
+    padding: 12px 16px !important;
+    gap: 12px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .rank {
+    font-size: 1.3rem !important;
+    width: 28px !important;
+  }
+
+  .row-name {
+    font-size: 1.1rem !important;
+  }
+
+  .row-score {
+    font-size: 1.3rem !important;
+    min-width: 60px !important;
+  }
+
+  #back-button {
+    top: 20px !important;
+    left: 20px !important;
+    padding: 12px 24px !important;
+    font-size: 1.1rem !important;
+    border-radius: 12px !important;
+  }
+
+  .switch-btn {
+    font-size: 1.1rem !important;
+    padding: 12px 20px !important;
+    border-radius: 12px !important;
+    margin: 0 6px !important;
+  }
+}
+
+/* LARGE SCREENS (1024px and up) */
+/* No styles here so your desktop CSS remains fully in control */
