@@ -4,12 +4,12 @@ const leaderboards = [
         title: "OFW ELITES 1 CWL LEADERBOARD",
         updated: "UPDATED ON 5/28/25 : 3:20PM",
         players: [
-            { name: "ALICE", stars: 16, percentage: 91.2 },
-            { name: "BOB", stars: 15, percentage: 88.7 },
-            { name: "CHARLIE", stars: 14, percentage: 85.3 },
-            { name: "DAVID", stars: 13, percentage: 80.5 },
-            { name: "ELLA", stars: 12, percentage: 79.9 },
-            { name: "FRANK", stars: 11, percentage: 78.1 }
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 }
         ]
     },
     {
@@ -17,47 +17,48 @@ const leaderboards = [
         updated: "UPDATED ON 5/30/25 : 4:51PM",
         players: [
             { name: "PATRICK XD JDS", stars: 15, percentage: 87.5 },
-            { name: "BOB", stars: 14, percentage: 79.3 },
-            { name: "CHARLIE", stars: 14, percentage: 92.1 },
-            { name: "DAVID", stars: 12, percentage: 88.7 },
-            { name: "ELLA", stars: 10, percentage: 95.4 },
-            { name: "FRANK", stars: 10, percentage: 82.3 }
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 }
         ]
     },
     {
         title: "OFW ELITES 3 CWL LEADERBOARD",
         updated: "UPDATED ON 6/1/25 : 1:15PM",
         players: [
-            { name: "GRACE", stars: 18, percentage: 90.0 },
-            { name: "HELEN", stars: 17, percentage: 85.5 },
-            { name: "IVAN", stars: 15, percentage: 78.9 },
-            { name: "JULIA", stars: 14, percentage: 80.1 },
-            { name: "KATE", stars: 13, percentage: 82.7 },
-            { name: "LEO", stars: 12, percentage: 79.4 }
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 }
         ]
     },
     {
         title: "OFW ELITES 4 CWL LEADERBOARD",
         updated: "UPDATED ON 6/2/25 : 9:30AM",
         players: [
-            { name: "MIA", stars: 20, percentage: 94.2 },
-            { name: "NICK", stars: 19, percentage: 89.5 },
-            { name: "OLIVIA", stars: 18, percentage: 87.3 },
-            { name: "PAUL", stars: 17, percentage: 85.0 },
-            { name: "QUINN", stars: 16, percentage: 83.8 },
-            { name: "RACHEL", stars: 15, percentage: 81.6 }
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 }
         ]
     },
     {
         title: "OFW ELITES 5 CWL LEADERBOARD",
         updated: "UPDATED ON 6/3/25 : 11:00AM",
         players: [
-            { name: "SAM", stars: 22, percentage: 96.5 },
-            { name: "TINA", stars: 21, percentage: 92.7 },
-            { name: "URSULA", stars: 20, percentage: 90.1 },
-            { name: "VICTOR", stars: 19, percentage: 88.4 },
-            { name: "WENDY", stars: 18, percentage: 85.9 },
-            { name: "XANDER", stars: 17, percentage: 84.3 }
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 },
+            { name: "NO DATA", stars: 0, percentage: 0 }
         ]
     }
 ];
