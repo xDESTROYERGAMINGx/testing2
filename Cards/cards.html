@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Card Selector Carousel with Gallery Navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive-mobile.css">
+</head>
+
+<body>
+    <button id="back-button" onclick="history.back()">← Back</button>
+    <button id="info-button" aria-label="Show info">ℹ️ Info</button>
+
+    <div id="info-overlay" class="hidden" role="dialog" aria-modal="true" aria-labelledby="info-title">
+        <div class="info-content">
+            <span id="close-info" class="close" role="button" aria-label="Close info overlay">&times;</span>
+            <h2 id="info-title">Information:</h2>
+            <p>
+                This is only for the OFW ELITES 2 Clan War. All members who participated in the war will be listed here,
+                along with their information such as player ID, the date they first joined the clan, how many 3-star
+                bases they achieved, and their win rate. <br><br>
+
+                Only fresh and cleanup 3-star bases will be counted — no re-hits. The win rate is based on the
+                average attack percentage from the war. Troop information and date of first entry are sourced from Clash
+                of Stats (clashofstats.com). <br><br>
+
+                This record aims to recognize and track the performance of each member during the war. The data will be
+                updated after each Clan War (maybe after 2-4 days). If you spot any errors or have missing data, feel free to message me. <br>
+                ~ Patrick XD JDS
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Card Selector Carousel</h1>
+        <h5>UPDATED ON 5/30/25 : 4:51PM</h5>
+
+        <form class="form" id="search-form" autocomplete="off" onsubmit="return false;">
+            <button type="submit" tabindex="-1" aria-label="Search">
+                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-labelledby="search">
+                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                        stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                </svg>
+            </button>
+            <input class="input" id="search-input" placeholder="Search by name..." autocomplete="off" required
+                type="text" />
+            <button class="reset" type="reset" aria-label="Clear search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <ul id="suggestions" class="suggestions-list" role="listbox" aria-label="Search suggestions"></ul>
+        </form>
+
+        <div class="carousel-wrapper">
+            <ul class="wrapper">
+                <li id="btn-left" class="icon black" aria-label="Previous card" role="button" tabindex="0">
+                    <span class="tooltip">Left</span>
+                    <span>
+                        <svg viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" height="24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                                fill-rule="evenodd"></path>
+                            <path
+                                d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                </li>
+                <div id="carousel" class="carousel"></div>
+                <li id="btn-right" class="icon black" aria-label="Next card" role="button" tabindex="0">
+                    <span class="tooltip">Right</span>
+                    <span>
+                        <svg viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" height="24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                                fill-rule="evenodd"></path>
+                            <path
+                                d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Details modal -->
+        <div id="details-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="person-name">
+            <div class="modal-content">
+                <span id="modal-close" class="close" role="button" aria-label="Close details modal">&times;</span>
+                <h2 id="person-name"></h2>
+                <div class="stats">
+
+                </div>
+                <div id="gallery" class="gallery"></div>
+            </div>
+        </div>
+
+        <!-- Image enlarge modal -->
+        <div id="img-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="enlarged-img">
+            <div class="modal-content img-modal-content">
+                <button id="img-modal-close" class="close" aria-label="Close image modal">&times;</button>
+
+                <!-- Navigation buttons -->
+                <button id="img-prev" class="img-nav-button" aria-label="Previous image">&#10094;</button>
+                <button id="img-next" class="img-nav-button" aria-label="Next image">&#10095;</button>
+
+                <img id="enlarged-img" src="" alt="Enlarged" />
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

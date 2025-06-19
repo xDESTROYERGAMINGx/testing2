@@ -7,6 +7,17 @@
 
 /* === MOBILE PHONES (max-width: 480px) === */
 @media screen and (max-width: 480px) {
+
+  html,
+  body {
+
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
   .info-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -182,15 +193,15 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.21);
+    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(10px);
-    margin-bottom: 100px;
+    height: 90px;
   }
 
   .footer p {
-    font-size: 5px;
-    color: rgb(182, 1, 1);
-    text-align: left; /* Center the text */
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
     align-items: center;
   }
 }
@@ -228,19 +239,14 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.21);
+    justify-content: center;
+    background-color: rgba(211, 211, 211, 0.21);
     backdrop-filter: blur(10px);
-    height: 20px;
-    padding: 0 40px;
+    height: 80px;
   }
 
   .footer p {
-    margin: 0;
-    font-size: 1px;
-    color: white;
-    text-align: center;
-    flex: 1;
+    margin: 0 10px;
   }
 }
 

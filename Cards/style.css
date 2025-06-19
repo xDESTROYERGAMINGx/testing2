@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+/* Reset and base */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(270deg, #4acfee, #2a46ff, #0099ff, #4acfee);
+    background-size: 600% 600%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(74, 207, 238, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    user-select: none;
+    outline-offset: 4px;
+    animation: gradientShift 8s ease infinite;
+}
+
+#back-button:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px rgba(74, 207, 238, 0.9),
+        0 0 40px rgba(42, 70, 255, 0.7);
+}
+
+#back-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 8px rgba(74, 207, 238, 0.5);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+
+    background: linear-gradient(to right, #4acfee, #53f8c9, #02d79a, #6070fd, #2a46ff, #0099ff, #4acfee);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+h5 {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Search box */
+.form {
+    --timing: 0.3s;
+    --width-of-input: 320px;
+    --height-of-input: 44px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #764ba2;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
+    margin: 0 auto 2rem auto;
+    z-index: 10;
+    margin-bottom: 150px;
+}
+
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+.input {
+    font-size: 1.05rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    color: #222;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+}
+
+.form:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+.form:focus-within:before {
+    transform: scale(1);
+}
+
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+    color: #8b8ba7;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input:not(:placeholder-shown)~.reset {
+    opacity: 1;
+    visibility: visible;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: white;
+    color: #222;
+    border: 1px solid #764ba2;
+    border-top: none;
+    max-height: 180px;
+    overflow-y: auto;
+    border-radius: 0 0 8px 8px;
+    z-index: 2000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    box-shadow: 0 4px 16px rgba(118, 75, 162, 0.08);
+}
+
+.suggestions-list.show {
+    display: block;
+}
+
+.suggestions-list li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.05rem;
+}
+
+.suggestions-list li:hover,
+.suggestions-list li[aria-selected="true"] {
+    background-color: #764ba2;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* --- Carousel wrapper with custom arrow buttons --- */
+.carousel-wrapper {
+    width: 100%;
+    max-width: 900px;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #764ba2;
+    /* purple color */
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #764ba2;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    white-space: nowrap;
+    transform: translateY(-10px);
+    z-index: 10;
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #764ba2;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -35px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper svg {
+    fill: currentColor;
+    transition: fill 0.3s ease;
+}
+
+.wrapper .icon:hover,
+.wrapper .icon:hover .tooltip,
+.wrapper .icon:hover .tooltip::before {
+    background: #764ba2;
+    color: white;
+    fill: white;
+}
+
+.wrapper .icon:disabled {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+}
+
+
+
+/* --- Carousel container --- */
+.carousel {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 600px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.carousel .card {
+    position: relative;
+    width: 280px;
+    height: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    user-select: none;
+    transition: transform 0.3s ease;
+    background: transparent;
+}
+
+/* Background image with blur and dark overlay */
+.carousel .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px) brightness(0.4);
+    z-index: 0;
+    transition: filter 0.3s ease;
+}
+
+/* Text content above background */
+.card-content {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+
+/* Hover scale */
+.carousel .card:hover {
+    transform: scale(1.05);
+}
+
+/* Smaller side cards */
+.carousel .card.side {
+    width: 140px;
+    height: 180px;
+    font-size: 1rem;
+    padding: 1rem;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.carousel .card.side:hover {
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
+
+
+/* --- Modal base --- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background: #222;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    color: #eee;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+    transform: translateY(-30px);
+    transition: transform 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    user-select: none;
+}
+
+.close:hover {
+    color: #fff;
+}
+
+/* Stats */
+.stats p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* --- Gallery styles --- */
+.gallery {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox hide scrollbar */
+    cursor: grab;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery:active {
+    cursor: grabbing;
+}
+
+.gallery img {
+    flex: 0 0 auto;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Image modal */
+.img-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#enlarged-img {
+    position: relative;
+    z-index: 1000;
+    /* less than close button */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+    animation: zoomIn 0.3s ease forwards;
+}
+
+/* Zoom in animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.img-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    /* No background */
+    border: none;
+    color: white;
+    /* White icon */
+    font-size: 2.5rem;
+    padding: 0 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 1050;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Glow effect on hover */
+.img-nav-button:hover {
+    color: white;
+    text-shadow:
+        0 0 4px white,
+        0 0 8px white,
+        0 0 12px white,
+        0 0 16px white;
+}
+
+
+#img-prev {
+    left: 10px;
+}
+
+#img-next {
+    right: 10px;
+}
+
+#img-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+    /* higher than the image and nav buttons */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    user-select: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* Glow effect on hover */
+#img-modal-close:hover {
+    color: white;
+    text-shadow:
+        0 0 8px white,
+        0 0 16px white,
+        0 0 24px white,
+        0 0 32px white;
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .carousel .card {
+        width: 160px;
+        height: 200px;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .carousel .card.side {
+        width: 90px;
+        height: 110px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .carousel .card {
+        scroll-snap-align: center;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-content {
+        font-size: 1.2rem;
+    }
+
+    .modal-content {
+        padding: 1rem;
+        max-width: 95vw;
+    }
+
+    .gallery img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* CARD */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 350px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    background: #222;
+    color: white;
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-left-pic,
+.card-right-pic {
+    width: 80px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-left-pic {
+    border-radius: 16px 0 0 16px;
+}
+
+.card-right-pic {
+    border-radius: 0 16px 16px 0;
+}
+
+.card-info {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    user-select: text;
+}
+
+/* INFO BUTTON */
+#info-button {
+    position: fixed;
+    top: 20px;
+    left: 140px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background: linear-gradient(270deg, #4acfee, #2a46ff, #0099ff, #4acfee);
+    background-size: 600% 600%; /* Add this for smooth gradient animation */
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 0 12px rgba(74, 207, 238, 0.7);
+    margin-left: 8px;
+    animation: gradientShift 8s ease infinite; /* Use the same animation name and timing as back button */
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#info-button:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px rgba(74, 207, 238, 0.9),
+        0 0 40px rgba(42, 70, 255, 0.7);
+}
+
+#info-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 8px rgba(74, 207, 238, 0.5);
+}
+
+
+#info-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+#info-overlay.hidden {
+    display: none;
+}
+
+.info-content {
+    background: #222;
+    color: #fff;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    max-width: 400px;
+    width: 90vw;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+#close-info.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s;
+}
+
+#close-info.close:hover {
+    color: #fff;
+}
