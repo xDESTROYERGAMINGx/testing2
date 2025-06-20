@@ -13,8 +13,8 @@ const people = [
     images: [
       "Clan Mates/HAMMER/19 1.PNG",
       "Clan Mates/HAMMER/22 2.PNG",
-      "CLAN Mates/HAMMER/23 3.PNG",
-      "CLAN Mates/HAMMER/22 4.PNG",
+      "Clan Mates/HAMMER/23 3.PNG",
+      "Clan Mates/HAMMER/22 4.PNG",
     ]
   },
   {
@@ -525,3 +525,94 @@ document.addEventListener('keydown', e => {
 // Initialize carousel on page load
 renderCarousel();
 focusCenterCard();
+
+
+
+function applyResponsiveLayout() {
+  const isMobile = window.innerWidth <= 600;
+
+  // Adjust carousel cards
+  const cards = carouselEl.querySelectorAll('.card');
+  cards.forEach(card => {
+    if (isMobile) {
+      if (card.classList.contains('center')) {
+        // Larger center card on mobile
+        card.style.width = '180px';
+        card.style.height = '280px';
+        card.style.fontSize = '1.3rem';
+      } else {
+        // Smaller side cards on mobile
+        card.style.width = '100px';
+        card.style.height = '160px';
+        card.style.fontSize = '1rem';
+        card.style.filter = 'brightness(0.7)';
+      }
+    } else {
+      // Reset to desktop sizes/styles
+      card.style.width = '';
+      card.style.height = '';
+      card.style.fontSize = '';
+      card.style.filter = '';
+    }
+  });
+
+  // Adjust side pics in details modal if visible
+  const sidePicsInfoDiv = detailsModal.querySelector('.side-pics-info');
+  if (sidePicsInfoDiv) {
+    const imgs = sidePicsInfoDiv.querySelectorAll('img');
+    imgs.forEach(img => {
+      if (isMobile) {
+        img.style.width = '60px';
+        img.style.height = '60px';
+        img.style.borderRadius = '8px';
+      } else {
+        img.style.width = '120px';
+        img.style.height = '120px';
+        img.style.borderRadius = '12px';
+      }
+    });
+
+    // Adjust info div font size on mobile
+    const infoDiv = sidePicsInfoDiv.querySelector('div');
+    if (infoDiv) {
+      infoDiv.style.fontSize = isMobile ? '1rem' : '1.1rem';
+      infoDiv.style.minWidth = isMobile ? '120px' : '170px';
+    }
+  }
+
+  // Adjust gallery image sizes
+  if (galleryEl) {
+    const galleryImgs = galleryEl.querySelectorAll('img');
+    galleryImgs.forEach(img => {
+      if (isMobile) {
+        img.style.width = '60px';
+        img.style.height = '60px';
+      } else {
+        img.style.width = '80px';
+        img.style.height = '80px';
+      }
+    });
+  }
+}
+
+// Run on page load and on resize
+window.addEventListener('DOMContentLoaded', () => {
+  applyResponsiveLayout();
+});
+
+window.addEventListener('resize', () => {
+  applyResponsiveLayout();
+});
+
+// Also call applyResponsiveLayout after rendering carousel and showing details
+const originalRenderCarousel = renderCarousel;
+renderCarousel = function() {
+  originalRenderCarousel();
+  applyResponsiveLayout();
+};
+
+const originalShowDetails = showDetails;
+showDetails = function(index) {
+  originalShowDetails(index);
+  applyResponsiveLayout();
+};
