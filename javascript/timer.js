@@ -1,4 +1,3 @@
-// Set the target end date: June 30, 2025, 12:00 PM (local time)
 const targetDate = new Date('June 30, 2025 12:00:00');
 
 function updateTimer() {
