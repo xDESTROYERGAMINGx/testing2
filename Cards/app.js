@@ -32,6 +32,7 @@ const people = [
       "Clan Mates/OE ⚔️Meliodas⚔️/1 2.PNG",
       "Clan Mates/OE ⚔️Meliodas⚔️/1 3.PNG",
       "Clan Mates/OE ⚔️Meliodas⚔️/1 4.PNG",
+      "Clan Mates/OE ⚔️Meliodas⚔️/1 5.jpg"
     ]
   },
   {
