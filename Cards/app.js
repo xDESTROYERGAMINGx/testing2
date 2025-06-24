@@ -1,77 +1,3 @@
-// Sample data with explicit IDs, cardImage, twoSidePics, and gallery images
-const people = [
-  {
-    id: "#G29LGRGCV",
-    name: "HAMMER",
-    cardImage: "assets/healer.jpg",
-    twoSidePics: [
-      "assets/TH/TH17.webp",  // Left side picture
-      "assets/CHAR/healer.webp" // Right side picture
-    ],
-    threeStarBases: 5,
-    winrate: "97.9%",
-    images: [
-      "Clan Mates/HAMMER/19 1.PNG",
-      "Clan Mates/HAMMER/22 2.PNG",
-      "Clan Mates/HAMMER/23 3.PNG",
-      "Clan Mates/HAMMER/22 4.PNG",
-    ]
-  },
-  {
-    id: "#PULJ2P2PL",
-    name: "OE ⚔️Meliodas⚔️",
-    cardImage: "assets/hogrider.jfif",
-    twoSidePics: [
-      "assets/TH/TH17.webp",
-      "assets/CHAR/hogrider.webp"
-    ],
-    threeStarBases: 8,
-    winrate: "91.3%",
-    images: [
-      "Clan Mates/OE ⚔️Meliodas⚔️/1 1.PNG",
-      "Clan Mates/OE ⚔️Meliodas⚔️/1 2.PNG",
-      "Clan Mates/OE ⚔️Meliodas⚔️/1 3.PNG",
-      "Clan Mates/OE ⚔️Meliodas⚔️/1 4.PNG",
-      "Clan Mates/OE ⚔️Meliodas⚔️/1 5.jpg"
-    ]
-  },
-  {
-    id: "#82VOC28JQ",
-    name: "Aether..23",
-    cardImage: "assets/wicth1.jpg",
-    twoSidePics: [
-      "assets/TH/TH17.webp",
-      "assets/CHAR/witch1.png"
-    ],
-    threeStarBases: 4,
-    winrate: "51.9%",
-    images: [
-      "Clan Mates/Aether..23/2 1.PNG",
-      "Clan Mates/Aether..23/2 2.PNG",
-      "Clan Mates/Aether..23/2 3.PNG",
-      "Clan Mates/Aether..23/2 4.PNG",
-    ]
-  },
-  {
-    id: "#2228QVCQQ",
-    name: "ąŋɗřəẃ❤️",
-    cardImage: "assets/minion.jpg",
-    twoSidePics: [
-      "assets/TH/TH17.webp",
-      "assets/CHAR/minion.webp"
-    ],
-    threeStarBases: 8,
-    winrate: "97%",
-    images: [
-      "Clan Mates/ąŋɗřəẃ❤️/3 1.PNG",
-      "Clan Mates/ąŋɗřəẃ❤️/3 2.PNG",
-      "Clan Mates/ąŋɗřəẃ❤️/4 3.PNG",
-      "Clan Mates/ąŋɗřəẃ❤️/3 4.PNG",
-    ]
-  }
-];
-
-// Elements
 const carouselEl = document.getElementById('carousel');
 const btnLeft = document.getElementById('btn-left');
 const btnRight = document.getElementById('btn-right');
@@ -101,16 +27,14 @@ let currentGalleryImages = [];
 let currentGalleryIndex = 0;
 let selectedSuggestionIndex = -1;
 
-// Circular index helper for infinite carousel
 function circularIndex(index) {
   const len = people.length;
   return ((index % len) + len) % len;
 }
 
-// Render carousel cards with single card image and name
 function renderCarousel() {
   carouselEl.innerHTML = '';
-  const range = 2; // show 2 cards before and after center
+  const range = 2;
 
   for (let offset = -range; offset <= range; offset++) {
     const i = circularIndex(currentIndex + offset);
@@ -181,12 +105,10 @@ function moveRight() {
   renderCarousel();
 }
 
-// Show details modal with two side pics, info center, and gallery images
 function showDetails(index) {
   const person = people[index];
   personNameEl.textContent = person.name;
 
-  // Clear gallery and add gallery images
   galleryEl.innerHTML = '';
   currentGalleryImages = person.images;
   currentGalleryIndex = 0;
@@ -209,7 +131,6 @@ function showDetails(index) {
 
   galleryEl.scrollLeft = 0;
 
-  // Insert two side pictures and info in modal-content, below personNameEl
   const modalContent = detailsModal.querySelector('.modal-content');
   const oldSidePics = modalContent.querySelector('.side-pics-info');
   if (oldSidePics) oldSidePics.remove();
@@ -498,7 +419,6 @@ if (searchForm) {
   });
 }
 
-// Info overlay toggle (info button functionality)
 infoButton.addEventListener('click', () => {
   infoOverlay.classList.remove('hidden');
   infoOverlay.focus();
@@ -523,7 +443,6 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// Initialize carousel on page load
 renderCarousel();
 focusCenterCard();
 
@@ -537,19 +456,17 @@ function applyResponsiveLayout() {
   cards.forEach(card => {
     if (isMobile) {
       if (card.classList.contains('center')) {
-        // Larger center card on mobile
         card.style.width = '180px';
         card.style.height = '280px';
         card.style.fontSize = '1.3rem';
       } else {
-        // Smaller side cards on mobile
         card.style.width = '100px';
         card.style.height = '160px';
         card.style.fontSize = '1rem';
         card.style.filter = 'brightness(0.7)';
       }
     } else {
-      // Reset to desktop sizes/styles
+
       card.style.width = '';
       card.style.height = '';
       card.style.fontSize = '';
@@ -557,7 +474,6 @@ function applyResponsiveLayout() {
     }
   });
 
-  // Adjust side pics in details modal if visible
   const sidePicsInfoDiv = detailsModal.querySelector('.side-pics-info');
   if (sidePicsInfoDiv) {
     const imgs = sidePicsInfoDiv.querySelectorAll('img');
@@ -573,7 +489,6 @@ function applyResponsiveLayout() {
       }
     });
 
-    // Adjust info div font size on mobile
     const infoDiv = sidePicsInfoDiv.querySelector('div');
     if (infoDiv) {
       infoDiv.style.fontSize = isMobile ? '1rem' : '1.1rem';
@@ -581,7 +496,6 @@ function applyResponsiveLayout() {
     }
   }
 
-  // Adjust gallery image sizes
   if (galleryEl) {
     const galleryImgs = galleryEl.querySelectorAll('img');
     galleryImgs.forEach(img => {
@@ -596,7 +510,6 @@ function applyResponsiveLayout() {
   }
 }
 
-// Run on page load and on resize
 window.addEventListener('DOMContentLoaded', () => {
   applyResponsiveLayout();
 });
@@ -605,15 +518,14 @@ window.addEventListener('resize', () => {
   applyResponsiveLayout();
 });
 
-// Also call applyResponsiveLayout after rendering carousel and showing details
 const originalRenderCarousel = renderCarousel;
-renderCarousel = function() {
+renderCarousel = function () {
   originalRenderCarousel();
   applyResponsiveLayout();
 };
 
 const originalShowDetails = showDetails;
-showDetails = function(index) {
+showDetails = function (index) {
   originalShowDetails(index);
   applyResponsiveLayout();
 };
