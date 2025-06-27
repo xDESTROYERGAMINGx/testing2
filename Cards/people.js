@@ -1,11 +1,11 @@
 const people = [
     {
         id: "",
-        name: "OE ⚔️Meliodas⚔️",
-        cardImage: "assets/hogrider.jfif",
+        name: "1",
+        cardImage: "assets/hogrider.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
-            "assets/CHAR/hogrider.webp"
+            "assets/CHAR/hogrider.png"
         ],
         threeStarBases: 1,
         winrate: "",
@@ -16,11 +16,14 @@ const people = [
             "ClanWars/June 2025/1 4.PNG",
             "ClanWars/June 2025/1 5.jpg",
             "ClanWars/June 2025/1 6.jpg",
+            "ClanWars/June 2025/1 7.jpg",
+            "ClanWars/June 2025/1 8.jpg",
+            "ClanWars/June 2025/2 9.jpg",
         ]
     },
     {
         id: "",
-        name: "Aether..23",
+        name: "2",
         cardImage: "assets/wicth1.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
@@ -35,15 +38,18 @@ const people = [
             "ClanWars/June 2025/2 4.PNG",
             "ClanWars/June 2025/2 5.jpg",
             "ClanWars/June 2025/2 6.jpg",
+            "ClanWars/June 2025/2 7.jpg",
+            "ClanWars/June 2025/2 8.jpg",
+            "ClanWars/June 2025/3 9.jpg",
         ]
     },
     {
         id: "",
-        name: "ąŋɗřəẃ❤️",
+        name: "3",
         cardImage: "assets/minion.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
-            "assets/CHAR/minion.webp"
+            "assets/CHAR/minion.png"
         ],
         threeStarBases: 1,
         winrate: "",
@@ -54,6 +60,608 @@ const people = [
             "ClanWars/June 2025/3 4.PNG",
             "ClanWars/June 2025/4 5.jpg",
             "ClanWars/June 2025/3 6.jpg",
+            "ClanWars/June 2025/3 7.jpg",
+            "ClanWars/June 2025/4 8.jpg",
+            "ClanWars/June 2025/4 9.jpg",
         ]
-    }
+    },
+    {
+        id: "",
+        name: "4",
+        cardImage: "assets/barbarian2.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/barbarian2.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/4 1.PNG",
+            "ClanWars/June 2025/5 2.PNG",
+            "ClanWars/June 2025/6 3.PNG",
+            "ClanWars/June 2025/6 4.PNG",
+            "ClanWars/June 2025/6 5.jpg",
+            "ClanWars/June 2025/5 6.jpg",
+            "ClanWars/June 2025/5 7.jpg",
+            "ClanWars/June 2025/5 8.jpg",
+            "ClanWars/June 2025/7 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "5",
+        cardImage: "assets/bk.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/bk.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/5 1.PNG",
+            "ClanWars/June 2025/6 2.PNG",
+            "ClanWars/June 2025/7 3.PNG",
+            "ClanWars/June 2025/7 4.PNG",
+            "ClanWars/June 2025/7 5.jpg",
+            "ClanWars/June 2025/7 6.jpg",
+            "ClanWars/June 2025/6 7.jpg",
+            "ClanWars/June 2025/7 8.jpg",
+            "ClanWars/June 2025/9 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "6",
+        cardImage: "assets/barbarian1.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/barbarian1.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/6 1.PNG",
+            "ClanWars/June 2025/7 2.PNG",
+            "ClanWars/June 2025/8 3.PNG",
+            "ClanWars/June 2025/8 4.PNG",
+            "ClanWars/June 2025/8 5.jpg",
+            "ClanWars/June 2025/8 6.jpg",
+            "ClanWars/June 2025/8 7.jpg",
+            "ClanWars/June 2025/6 8.jpg",
+            "ClanWars/June 2025/6 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "7",
+        cardImage: "assets/super-goblin1.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/super-goblin.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/7 1.PNG",
+            "ClanWars/June 2025/8 2.PNG",
+            "ClanWars/June 2025/9 3.PNG",
+            "ClanWars/June 2025/9 4.PNG",
+            "ClanWars/June 2025/9 5.jpg",
+            "ClanWars/June 2025/9 6.jpg",
+            "ClanWars/June 2025/9 7.jpg",
+            "ClanWars/June 2025/9 8.jpg",
+            "ClanWars/June 2025/11 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "8",
+        cardImage: "assets/archer3.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/archer3.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/8 1.PNG",
+            "ClanWars/June 2025/10 2.PNG",
+            "ClanWars/June 2025/11 3.PNG",
+            "ClanWars/June 2025/11 4.PNG",
+        ]
+    },
+    {
+        id: "",
+        name: "9",
+        cardImage: "assets/witch2.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/witch2.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/9 1.PNG",
+            "ClanWars/June 2025/11 2.PNG",
+            "ClanWars/June 2025/12 3.PNG",
+            "ClanWars/June 2025/12 4.PNG",
+            "ClanWars/June 2025/12 5.JPG",
+            "ClanWars/June 2025/13 6.JPG",
+            "ClanWars/June 2025/13 7.jpg",
+            "ClanWars/June 2025/13 8.jpg",
+            "ClanWars/June 2025/14 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "10",
+        cardImage: "assets/barbarian1.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/barbarian1.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/10 1.PNG",
+            "ClanWars/June 2025/12 2.PNG",
+            "ClanWars/June 2025/13 3.PNG",
+            "ClanWars/June 2025/13 4.PNG",
+            "ClanWars/June 2025/11 5.JPG",
+            "ClanWars/June 2025/12 6.JPG",
+            "ClanWars/June 2025/11 7.jpg",
+            "ClanWars/June 2025/11 8.jpg",
+            "ClanWars/June 2025/12 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "11",
+        cardImage: "assets/valkyrie.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/valkyrie.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/11 1.PNG",
+            "ClanWars/June 2025/13 2.PNG",
+            "ClanWars/June 2025/14 3.PNG",
+            "ClanWars/June 2025/14 4.PNG",
+            "ClanWars/June 2025/13 5.JPG",
+            "ClanWars/June 2025/15 6.JPG",
+            "ClanWars/June 2025/15 7.jpg",
+            "ClanWars/June 2025/15 8.jpg",
+            "ClanWars/June 2025/16 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "12",
+        cardImage: "assets/balloon.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/balloon.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/12 1.PNG",
+            "ClanWars/June 2025/14 2.PNG",
+            "ClanWars/June 2025/15 3.PNG",
+            "ClanWars/June 2025/15 4.PNG",
+            "ClanWars/June 2025/14 5.JPG",
+            "ClanWars/June 2025/14 6.JPG",
+            "ClanWars/June 2025/14 7.jpg",
+            "ClanWars/June 2025/14 8.jpg",
+            "ClanWars/June 2025/15 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "13",
+        cardImage: "assets/golem.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/golem.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/13 1.PNG",
+            "ClanWars/June 2025/15 2.PNG",
+            "ClanWars/June 2025/16 3.PNG",
+            "ClanWars/June 2025/16 4.PNG",
+            "ClanWars/June 2025/15 5.JPG",
+            "ClanWars/June 2025/16 6.JPG",
+            "ClanWars/June 2025/16 7.jpg",
+            "ClanWars/June 2025/16 8.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "14",
+        cardImage: "assets/superarcher1.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/super-archer-1.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/14 1.PNG",
+            "ClanWars/June 2025/16 2.PNG",
+            "ClanWars/June 2025/17 3.PNG",
+            "ClanWars/June 2025/16 5.JPG",
+            "ClanWars/June 2025/17 6.JPG",
+        ]
+    },
+    {
+        id: "",
+        name: "15",
+        cardImage: "assets/minion.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/minion.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/15 1.PNG",
+            "ClanWars/June 2025/17 2.PNG",
+            "ClanWars/June 2025/18 3.PNG",
+            "ClanWars/June 2025/17 4.PNG",
+            "ClanWars/June 2025/20 5.JPG",
+            "ClanWars/June 2025/21 6.JPG",
+            "ClanWars/June 2025/20 7.jpg",
+            "ClanWars/June 2025/20 8.jpg",
+            "ClanWars/June 2025/20 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "16",
+        cardImage: "assets/giant2.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/giant2.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/16 1.PNG",
+            "ClanWars/June 2025/20 2.PNG",
+            "ClanWars/June 2025/19 3.PNG",
+            "ClanWars/June 2025/18 4.PNG",
+            "ClanWars/June 2025/22 5.JPG",
+            "ClanWars/June 2025/23 6.JPG",
+            "ClanWars/June 2025/23 7.jpg",
+            "ClanWars/June 2025/22 8.jpg",
+            "ClanWars/June 2025/22 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "17",
+        cardImage: "assets/hogrider.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/hogrider.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/17 1.PNG",
+            "ClanWars/June 2025/18 2.PNG",
+            "ClanWars/June 2025/20 3.PNG",
+            "ClanWars/June 2025/19 4.PNG",
+            "ClanWars/June 2025/19 5.JPG",
+            "ClanWars/June 2025/20 6.JPG",
+            "ClanWars/June 2025/19 7.jpg",
+            "ClanWars/June 2025/19 8.jpg",
+            "ClanWars/June 2025/19 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "18",
+        cardImage: "assets/bk.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/bk.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/18 1.PNG",
+            "ClanWars/June 2025/21 2.PNG",
+            "ClanWars/June 2025/21 3.PNG",
+            "ClanWars/June 2025/20 4.PNG",
+            "ClanWars/June 2025/17 5.JPG",
+            "ClanWars/June 2025/19 6.JPG",
+            "ClanWars/June 2025/18 7.jpg",
+            "ClanWars/June 2025/17 8.jpg",
+            "ClanWars/June 2025/17 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "19",
+        cardImage: "assets/healer.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/healer.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/19 1.PNG",
+            "ClanWars/June 2025/22 2.PNG",
+            "ClanWars/June 2025/23 3.PNG",
+            "ClanWars/June 2025/22 4.PNG",
+            "ClanWars/June 2025/24 5.JPG",
+            "ClanWars/June 2025/25 6.JPG",
+            "ClanWars/June 2025/22 7.jpg",
+            "ClanWars/June 2025/23 8.jpg",
+            "ClanWars/June 2025/23 9.jpg",
+        ]
+    },
+
+    {
+        id: "",
+        name: "20",
+        cardImage: "assets/witch2.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/witch2.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/20 1.PNG",
+            "ClanWars/June 2025/24 2.PNG",
+            "ClanWars/June 2025/24 3.PNG",
+            "ClanWars/June 2025/23 4.PNG",
+            "ClanWars/June 2025/25 5.JPG",
+            "ClanWars/June 2025/26 6.JPG",
+            "ClanWars/June 2025/25 7.jpg",
+            "ClanWars/June 2025/25 8.jpg",
+            "ClanWars/June 2025/25 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "21",
+        cardImage: "assets/supergiant.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/super-giant.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/21 1.PNG",
+            "ClanWars/June 2025/23 2.PNG",
+            "ClanWars/June 2025/22 3.PNG",
+            "ClanWars/June 2025/21 4.PNG",
+            "ClanWars/June 2025/23 5.JPG",
+            "ClanWars/June 2025/24 6.JPG",
+            "ClanWars/June 2025/24 7.jpg",
+            "ClanWars/June 2025/24 8.jpg",
+            "ClanWars/June 2025/24 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "22",
+        cardImage: "assets/archer3.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/archer3.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/22 1.PNG",
+            "ClanWars/June 2025/25 2.PNG",
+            "ClanWars/June 2025/25 3.PNG",
+            "ClanWars/June 2025/26 5.JPG",
+            "ClanWars/June 2025/27 6.JPG",
+            "ClanWars/June 2025/26 7.jpg",
+            "ClanWars/June 2025/26 8.jpg",
+            "ClanWars/June 2025/26 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "23",
+        cardImage: "assets/giant1.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/giant1.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/23 1.PNG",
+            "ClanWars/June 2025/26 2.PNG",
+            "ClanWars/June 2025/26 3.PNG",
+            "ClanWars/June 2025/24 4.png",
+            "ClanWars/June 2025/27 5.JPG",
+            "ClanWars/June 2025/28 6.JPG",
+            "ClanWars/June 2025/27 7.jpg",
+            "ClanWars/June 2025/27 8.jpg",
+            "ClanWars/June 2025/27 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "24",
+        cardImage: "assets/dragon.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/dragon.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/24 1.PNG",
+            "ClanWars/June 2025/27 2.PNG",
+            "ClanWars/June 2025/27 3.PNG",
+            "ClanWars/June 2025/25 4.PNG",
+            "ClanWars/June 2025/28 5.JPG",
+            "ClanWars/June 2025/29 6.JPG",
+            "ClanWars/June 2025/28 7.jpg",
+            "ClanWars/June 2025/28 8.jpg",
+            "ClanWars/June 2025/28 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "25",
+        cardImage: "assets/valkyrie.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/valkyrie.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/25 1.PNG",
+            "ClanWars/June 2025/28 2.PNG",
+            "ClanWars/June 2025/28 3.PNG",
+            "ClanWars/June 2025/30 8.jpg",
+            "ClanWars/June 2025/31 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "26",
+        cardImage: "assets/barbarian1.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/barbarian1.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/26 1.PNG",
+            "ClanWars/June 2025/29 2.PNG",
+            "ClanWars/June 2025/29 3.PNG",
+            "ClanWars/June 2025/26 4.PNG",
+            "ClanWars/June 2025/30 5.JPG",
+            "ClanWars/June 2025/31 6.JPG",
+            "ClanWars/June 2025/29 7.jpg",
+            "ClanWars/June 2025/29 8.jpg",
+            "ClanWars/June 2025/29 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "27",
+        cardImage: "assets/hogrider.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/hogrider.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/27 1.PNG",
+            "ClanWars/June 2025/30 2.PNG",
+            "ClanWars/June 2025/30 3.PNG",
+            "ClanWars/June 2025/27 4.PNG",
+            "ClanWars/June 2025/29 5.JPG",
+            "ClanWars/June 2025/30 6.JPG",
+            "ClanWars/June 2025/30 7.jpg",
+            "ClanWars/June 2025/31 8.jpg",
+            "ClanWars/June 2025/30 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "28",
+        cardImage: "assets/barbarian3.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/barbarian3.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/28 1.PNG",
+            "ClanWars/June 2025/31 2.PNG",
+            "ClanWars/June 2025/32 3.PNG",
+            "ClanWars/June 2025/28 4.PNG",
+            "ClanWars/June 2025/32 5.JPG",
+            "ClanWars/June 2025/33 6.JPG",
+            "ClanWars/June 2025/32 7.jpg",
+            "ClanWars/June 2025/33 8.jpg",
+            "ClanWars/June 2025/33 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "29",
+        cardImage: "assets/dragon.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/dragon.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/29 1.PNG",
+            "ClanWars/June 2025/32 2.PNG",
+            "ClanWars/June 2025/34 3.PNG",
+            "ClanWars/June 2025/31 4.PNG",
+            "ClanWars/June 2025/34 5.JPG",
+            "ClanWars/June 2025/35 6.JPG",
+        ]
+    },
+    {
+        id: "",
+        name: "30",
+        cardImage: "assets/super-goblin1.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/super-goblin.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/30 1.PNG",
+            "ClanWars/June 2025/34 2.PNG",
+            "ClanWars/June 2025/31 3.PNG",
+            "ClanWars/June 2025/29 4.PNG",
+            "ClanWars/June 2025/31 5.JPG",
+            "ClanWars/June 2025/32 6.JPG",
+            "ClanWars/June 2025/31 7.jpg",
+            "ClanWars/June 2025/32 8.jpg",
+            "ClanWars/June 2025/32 9.jpg",
+        ]
+    },
+    {
+        id: "",
+        name: "31",
+        cardImage: "assets/bk.jpg",
+        twoSidePics: [
+            "assets/TH/TH17.webp",
+            "assets/CHAR/bk.png"
+        ],
+        threeStarBases: 1,
+        winrate: "",
+        images: [
+            "ClanWars/June 2025/31 1.PNG",
+            "ClanWars/June 2025/33 2.PNG",
+            "ClanWars/June 2025/33 3.PNG",
+            "ClanWars/June 2025/30 4.PNG",
+            "ClanWars/June 2025/33 5.JPG",
+            "ClanWars/June 2025/34 6.JPG",
+            "ClanWars/June 2025/33 7.jpg",
+            "ClanWars/June 2025/34 8.jpg",
+            "ClanWars/June 2025/34 9.jpg",
+        ]
+    },
 ];
