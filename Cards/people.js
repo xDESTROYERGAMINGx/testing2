@@ -1068,10 +1068,10 @@ const people = [
     {
         id: "",
         name: "51",
-        cardImage: "assets/wicth1.JPG",
+        cardImage: "assets/wicth1.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
-            "assets/CHAR/wicth1.PNG"
+            "assets/CHAR/wicth1.png"
         ],
         threeStarBases: 1,
         winrate: "",
@@ -1090,10 +1090,10 @@ const people = [
     {
         id: "",
         name: "52",
-        cardImage: "assets/witch1.JPG",
+        cardImage: "assets/witch1.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
-            "assets/CHAR/witch1.PNG"
+            "assets/CHAR/witch1.png"
         ],
         threeStarBases: 1,
         winrate: "",
@@ -1237,7 +1237,7 @@ const people = [
     {
         id: "",
         name: "60",
-        cardImage: "assets/barbarian4.jpg",
+        cardImage: "assets/barbarian3.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
             "assets/CHAR/barbarian4.png"
