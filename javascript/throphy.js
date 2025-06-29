@@ -2,34 +2,34 @@
 const leaderboards = [
     {
         title: "OFW ELITES LEADERBOARD",
-        sub: "UPDATED ON 5/30/25 : 4:51PM",
+        sub: "UPDATED ON 6/29/25 : 3:00PM",
         players: [
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" }
+            { name: "FL⚡️❣️My_Lady❣️", trophies: 6165, avatar: "../assets/CHAR/golem.png" },
+            { name: "OE☆☆☆ReNaN☆☆☆", trophies: 6163, avatar: "../assets/CHAR/barbarian2.png" },
+            { name: "❤KIDDO❤", trophies: 6092, avatar: "../assets/CHAR/giant2.png" },
+            { name: "Minimix.", trophies: 6077, avatar: "../assets/CHAR/bk2.png" },
+            { name: "™Aliäs{{2015}}™", trophies: 6019, avatar: "../assets/CHAR/golem.png" },
+            { name: "❤baBy_sKy™❤", trophies: 5976, avatar: "../assets/CHAR/hogrider.png" },
+            { name: "☠️⭕P-Maximus☠️", trophies: 5956, avatar: "../assets/CHAR/valkyrie.png" },
+            { name: "☠️OP-SenG⭕️kU☠️", trophies: 5949, avatar: "../assets/CHAR/barbarian1.png" },
+            { name: "TW™️ seaweeds", trophies: 5948, avatar: "../assets/CHAR/barbarian1.png" },
+            { name: "LostChild", trophies: 5939, avatar: "../assets/CHAR/barbarian2.png" }
         ]
     },
     {
         title: "OFW ELITES 2 LEADERBOARD",
-        sub: "UPDATED ON 6/1/25 : 10:00AM",
+        sub: "UPDATED ON 6/29/25 : 3:00PM",
         players: [
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" },
-            { name: "NO DATA", trophies: 0, avatar: "../assets/CHAR/hogrider.webp" }
+            { name: "OE ⚔️Meliodas⚔️", trophies: 6027, avatar: "../assets/CHAR/hogrider.png" },
+            { name: "⚜️⚜️JÉSSÍÉ⚜️⚜️", trophies: 6006, avatar: "../assets/CHAR/hogrider.png" },
+            { name: "Sawamura", trophies: 5986, avatar: "../assets/CHAR/bk.png" },
+            { name: "ЯЄD Ｎ⭕ＴＩＣＥ ᵘⁿ", trophies: 5926, avatar: "../assets/CHAR/witch1.png" },
+            { name: "Makario", trophies: 5915, avatar: "../assets/CHAR/barbarian1.png" },
+            { name: "Rai Ley メ ❘ イノブ", trophies: 5908, avatar: "../assets/CHAR/barbarian1.png" },
+            { name: "☠️BAYMAX☠️", trophies: 5883, avatar: "../assets/CHAR/dragon.png" },
+            { name: "8mG Uric Acid", trophies: 5858, avatar: "../assets/CHAR/barbarian1.png" },
+            { name: "K♦️L♦️H♦️A♦️Y", trophies: 5851, avatar: "../assets/CHAR/super-goblin.png" },
+            { name: "Aether..23", trophies: 5842, avatar: "../assets/CHAR/witch1.png" }
         ]
     }
 ];

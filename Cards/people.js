@@ -25,7 +25,7 @@ const people = [
     {
         id: "",
         name: "2",
-        cardImage: "assets/wicth1.jpg",
+        cardImage: "assets/witch1.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
             "assets/CHAR/witch1.png"
@@ -703,7 +703,7 @@ const people = [
         images: [
             "ClanWars/June 2025/32 1.PNG",
             "ClanWars/June 2025/35 2.PNG",
-            "ClanWars/June 2025/36 3.PNG",
+            "ClanWars/June 2025/35 3.PNG",
             "ClanWars/June 2025/32 4.PNG",
             "ClanWars/June 2025/35 5.jpg",
             "ClanWars/June 2025/36 6.jpg",
@@ -730,7 +730,7 @@ const people = [
             "ClanWars/June 2025/34 4.PNG",
             "ClanWars/June 2025/37 5.jpg",
             "ClanWars/June 2025/38 6.jpg",
-            "ClanWars/June 2025/37 7.jpg",
+            "ClanWars/June 2025/36 7.jpg",
             "ClanWars/June 2025/37 8.jpg",
             "ClanWars/June 2025/37 9.jpg",
             "ClanWars/June 2025/37 10.jpg",
@@ -1068,10 +1068,10 @@ const people = [
     {
         id: "",
         name: "51",
-        cardImage: "assets/wicth1.jpg",
+        cardImage: "assets/witch1.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",
-            "assets/CHAR/wicth1.png"
+            "assets/CHAR/witch1.png"
         ],
         threeStarBases: 1,
         winrate: "",
@@ -1089,7 +1089,7 @@ const people = [
     },
     {
         id: "",
-        name: "52",
+        name: "51",
         cardImage: "assets/witch1.jpg",
         twoSidePics: [
             "assets/TH/TH17.webp",

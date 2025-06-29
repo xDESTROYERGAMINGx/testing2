@@ -2,34 +2,34 @@
 const leaderboardData = [
   {
     title: "OFW ELITES DONATION LEADERBOARD",
-    sub: "NO DATA",
+    sub: "UPDATED ON 6/29/25 : 3:00PM",
     players: [
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" },
-      { name: "NO DATA", score: 0, avatar: "" }
+      { name: "Raz.Ai", score: 107494, avatar: "../assets/CHAR/bk2.png" },
+      { name: "OE_Alexandra❤️", score: 56851, avatar: "../assets/CHAR/wallbreaker.png" },
+      { name: "OE_xAd_dAx", score: 11395, avatar: "../assets/CHAR/pekka.png" },
+      { name: "✧ chⒺssmⒶn ✧", score: 9826, avatar: "../assets/CHAR/archer1.png" },
+      { name: "entengzki", score: 5601, avatar: "../assets/CHAR/archer3.png" },
+      { name: "pruto", score: 5216, avatar: "../assets/CHAR/wallbraeker.png" },
+      { name: "✓Lord BioMan✓", score: 3318, avatar: "../assets/CHAR/barbarian4.png" },
+      { name: "Minimix", score: 1793, avatar: "../assets/CHAR/bk2.png" },
+      { name: "1k", score: 1706, avatar: "../assets/CHAR/giant1.png" },
+      { name: "❤KIDDO❤", score: 1527, avatar: "../assets/CHAR/giant2.png" }
     ]
   },
   {
     title: "OFW ELITES 2 DONATION LEADERBOARD",
-    sub: "UPDATED ON 6/14/25 : 12:48AM",
+    sub: "UPDATED ON 6/29/25 : 3:00PM",
     players: [
-      { name: "ZANE", score: 27157, avatar: "../assets/CHAR/healer.webp" },
-      { name: "PATRICK", score: 8658, avatar: "../assets/CHAR/hogrider.webp" },
-      { name: "ANDREW", score: 6358, avatar: "../assets/CHAR/minion.webp" },
-      { name: "KEV PU AKAL", score: 2511, avatar: "../assets/CHAR/barbarian1.png" },
-      { name: "PAWIII", score: 2063, avatar: "../assets/CHAR/balloon.png" },
-      { name: "K L H A Y", score: 1541, avatar: "" },
-      { name: "POT2X", score: 1402, avatar: "../assets/CHAR/barbarian2.webp" },
-      { name: "JESSIE", score: 1367, avatar: "../assets/CHAR/hogrider.webp" },
-      { name: "OE MELIODAS", score: 1159, avatar: "../assets/CHAR/hogrider.webp" },
-      { name: "EVIL WITCH", score: 1038, avatar: "../assets/CHAR/archer3.webp" }
+      { name: "Zane", score: 79266, avatar: "../assets/CHAR/healer.png" },
+      { name: "ąŋɗřəẃ❤️", score: 47443, avatar: "../assets/CHAR/minion.png" },
+      { name: "PATRICK", score: 26031, avatar: "../assets/CHAR/hogrider.png" },
+      { name: "pot2x", score: 13526, avatar: "../assets/CHAR/barbarian2.png" },
+      { name: "8mG Uric Acid", score: 4570, avatar: "../assets/CHAR/barbarian1.png" },
+      { name: "KEV⚡PU⚡AKAL", score: 4022, avatar: "../assets/CHAR/barbarian4.png" },
+      { name: "Curt Jester ❤️", score: 3612, avatar: "../assets/CHAR/barbarian3.png" },
+      { name: "MASTER CASBY", score: 3044, avatar: "../assets/CHAR/witch2.png" },
+      { name: "Pawiii", score: 1823, avatar: "../assets/CHAR/ballooon.png" },
+      { name: "K♦️L♦️H♦️A♦️Y", score: 1542, avatar: "../assets/CHAR/super-goblin.png" }
     ]
   }
 ];
