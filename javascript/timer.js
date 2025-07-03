@@ -1,4 +1,4 @@
-const targetDate = new Date('June 30, 2025 12:00:00');
+const targetDate = new Date('July 28, 2025 12:00:00');
 
 function updateTimer() {
   const currentTime = new Date().getTime();

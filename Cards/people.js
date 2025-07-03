@@ -1302,7 +1302,7 @@ const people = [
         winrate: "",
         images: [
             "ClanWars/June 2025/38 8.jpg",
-            "ClanWars/June 2025/39 9.jpg",
+            "ClanWars/June 2025/38 9.jpg",
             "ClanWars/June 2025/38 10.jpg",
         ]
     },
