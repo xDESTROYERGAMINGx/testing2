@@ -2,7 +2,7 @@
 const leaderboards = [
     {
         title: "OFW ELITES LEADERBOARD",
-        sub: "UPDATED ON 6/29/25 : 3:00PM",
+        sub: "UPDATED ON 6/29/25 : 3:00PM : NOT FINAL",
         players: [
             { name: "FL⚡️❣️My_Lady❣️", trophies: 6165, avatar: "../assets/CHAR/golem.png" },
             { name: "OE☆☆☆ReNaN☆☆☆", trophies: 6163, avatar: "../assets/CHAR/barbarian2.png" },
@@ -18,7 +18,7 @@ const leaderboards = [
     },
     {
         title: "OFW ELITES 2 LEADERBOARD",
-        sub: "UPDATED ON 6/29/25 : 3:00PM",
+        sub: "UPDATED ON 6/29/25 : 3:00PM : NOT FINAL", 
         players: [
             { name: "OE ⚔️Meliodas⚔️", trophies: 6027, avatar: "../assets/CHAR/hogrider.png" },
             { name: "⚜️⚜️JÉSSÍÉ⚜️⚜️", trophies: 6006, avatar: "../assets/CHAR/hogrider.png" },
