@@ -505,7 +505,7 @@ const people = [
             "ClanWars/June 2025/23 1.PNG",
             "ClanWars/June 2025/26 2.PNG",
             "ClanWars/June 2025/26 3.PNG",
-            "ClanWars/June 2025/24 4.png",
+            "ClanWars/June 2025/24 4.PNG",
             "ClanWars/June 2025/27 5.jpg",
             "ClanWars/June 2025/28 6.jpg",
             "ClanWars/June 2025/27 7.jpg",
@@ -946,7 +946,7 @@ const people = [
         name: "44",
         cardImage: "assets/hogrider.jpg",
         twoSidePics: [
-            "assets/TH/TH15.webp",
+            "assets/TH/TH15.WEBP",
             "assets/CHAR/hogrider.png"
         ],
         threeStarBases: 1,
