@@ -946,7 +946,7 @@ const people = [
         name: "44",
         cardImage: "assets/hogrider.jpg",
         twoSidePics: [
-            "assets/TH/TH15.WEBP",
+            "assets/TH/th15.WEBP",
             "assets/CHAR/hogrider.png"
         ],
         threeStarBases: 1,
@@ -960,7 +960,7 @@ const people = [
         name: "45",
         cardImage: "assets/barbarian2.jpg",
         twoSidePics: [
-            "assets/TH/TH15.webp",
+            "assets/TH/th15.webp",
             "assets/CHAR/barbarian2.png"
         ],
         threeStarBases: 1,
@@ -1005,7 +1005,7 @@ const people = [
         name: "47",
         cardImage: "assets/super-goblin2.jpg",
         twoSidePics: [
-            "assets/TH/TH15.webp",
+            "assets/TH/th15.webp",
             "assets/CHAR/super-goblin2.png"
         ],
         threeStarBases: 1,
